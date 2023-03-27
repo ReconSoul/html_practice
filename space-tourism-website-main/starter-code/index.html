@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
-
-  Explore
-
-</body>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section id="home">
+      <div class="header">
+        <nav>
+          <img class="logo" src="assets/shared/logo.svg" />
+          <hr />
+          <div class="dropdown">
+            <ul>
+              <li><a id="home-button" href="index.html">00 Home</a></li>
+              <li id="nav-destinations">
+                <button class="dropbtn">01 Destination</button>
+                <div class="dropdown-content">
+                  <a href="destinations/europa.html">Europa</a>
+                  <a href="destinations/mars.html">Mars</a>
+                  <a href="destinations/moon.html">Moon</a>
+                  <a href="destinations/titan.html">Titan</a>
+                </div>
+              </li>
+              <li id="nav-crew">
+                <button id="nav-crew-btn" class="dropbtn">02 Crew</button>
+                <div id="nav-crew-content" class="dropdown-content">
+                  <a href="crew/commander.html">Commander</a>
+                  <a href="crew/engineer.html">Engineer</a>
+                  <a href="crew/pilot.html">Pilot</a>
+                  <a href="crew/specialist.html">Specialist</a>
+                </div>
+              </li>
+              <li id="nav-tech">
+                <button id="nav-tech-btn" class="dropbtn">03 Technology</button>
+                <div id="nav-tech-content" class="dropdown-content">
+                  <a href="technologies/capsule.html">Capsule</a>
+                  <a href="technologies/spaceport.html">Spaceport</a>
+                  <a href="technologies/vehicle.html">Vehicle</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="home-content">
+        <h2>So, you want to travel to</h2>
+        <h1>Space</h1>
+        <p>
+          Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of
+          on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+      <div class="explore">
+        <h2>Explore</h2>
+      </div>
+    </section>
+  </body>
 </html>

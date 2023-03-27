@@ -1,0 +1,159 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  color: wheat;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+nav {
+  padding-top: 50px;
+}
+
+nav hr {
+  display: inline-block;
+  position: absolute;
+  width: 40%;
+  margin: 30px 5px;
+}
+
+@media screen and (min-width: 1440px) {
+  #home {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  #home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.logo {
+  margin: 10px;
+  float: left;
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  backdrop-filter: blur(1px);
+  height: 10%;
+  font-size: 15px;
+  margin: 0 20px;
+  width: 65%;
+  height: 100px;
+}
+
+.dropbtn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.home-content {
+  width: 40%;
+  margin: 350px 0 0 10%;
+  float: left;
+}
+
+.explore {
+  margin: 550px 15% 20% 0;
+  padding: 5%;
+  float: right;
+  background-color: white;
+  color: black;
+  border-radius: 150px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+#nav-destinations:hover .dropdown-content {
+  display: block;
+}
+
+#nav-crew:hover .dropdown-content {
+  display: block;
+}
+#nav-tech:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#nav-destinations:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#nav-crew:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#nav-tech:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#home-button {
+  text-decoration: none;
+}
