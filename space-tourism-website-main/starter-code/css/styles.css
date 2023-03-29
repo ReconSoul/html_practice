@@ -29,14 +29,14 @@ h1 {
   font-size: 180px;
   margin: 25px 0 40px 0;
   text-transform: uppercase;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: 10px;
   color: white;
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: .4rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-size: 32px;
 }
@@ -68,6 +68,10 @@ nav hr {
   #destination {
     background-image: url("../assets/destination/background-destination-desktop.jpg");
   }
+
+  #crew {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -77,6 +81,9 @@ nav hr {
   #destination {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
   }
+  #crew {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -85,6 +92,9 @@ nav hr {
   }
   #destination {
     background-image: url("../assets/destination/background-destination-mobile.jpg");
+  }
+  #crew {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
   }
 }
 
@@ -98,11 +108,15 @@ nav hr {
   float: left;
 }
 
-.nav-destinations {
+.sub-nav {
   position: relative;
-  float: left;
+  left: 30px;
   top: 40px;
   z-index: 1;
+}
+
+.sub-nav ul {
+  margin: 0;
 }
 
 .nav-buttons {
@@ -122,8 +136,8 @@ nav hr {
   font-size: 15px;
   margin: 0 20px;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: .2rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 
@@ -138,6 +152,13 @@ nav hr {
 
 .left {
   float: left;
+}
+
+.center {
+  position: relative;
+  display: inline-block;
+  margin-top: 80px;
+  left: 33%;
 }
 
 .right {
@@ -170,8 +191,12 @@ nav hr {
 #nav-europa:hover .nav-btn,
 #nav-mars:hover .nav-btn,
 #nav-moon:hover .nav-btn,
-#nav-titan:hover .nav-btn
-{
+#nav-titan:hover .nav-btn,
+#nav-commander:hover .nav-btn,
+#nav-engineer:hover .nav-btn,
+#nav-pilot:hover .nav-btn,
+#nav-specialist:hover .nav-btn
+ {
   border-bottom: 1px solid white;
 }
 
@@ -185,4 +210,19 @@ nav hr {
   padding: 10% 0 0 0;
   top: 30%;
   left: 20%;
+}
+
+.crew-content {
+  position: relative;
+  top: 30%;
+}
+
+.crew-content img {
+  position: absolute;
+  left: 70%;
+  bottom: 0%;
+}
+
+.crew-name {
+  margin: 0 30%;
 }
