@@ -2,11 +2,20 @@ body,
 html {
   margin: 0;
   height: 100%;
-  color: wheat;
+  color: rgba(229, 228, 253, 0.866);
+}
+
+section {
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {
-  margin: 0;
+  margin: 0 0 0 15%;
   list-style-type: none;
   padding: 0;
   display: inline-block;
@@ -17,143 +26,163 @@ li {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 180px;
+  margin: 25px 0 40px 0;
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 10px;
+  color: white;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+p {
+  font-size: 23px;
+  font-family: sans-serif;
+  line-height: 40px;
 }
 
 nav {
+  position: relative;
   padding-top: 50px;
 }
 
 nav hr {
   display: inline-block;
   position: absolute;
-  width: 40%;
-  margin: 30px 5px;
+  width: 35%;
+  border: 0.5px solid rgba(73, 72, 72, 0.5);
+  margin: 53px 80px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1440px) {
   #home {
     background-image: url("../assets/home/background-home-desktop.jpg");
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  #destination {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   #home {
     background-image: url("../assets/home/background-home-tablet.jpg");
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  #destination {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
   }
 }
 
 @media screen and (max-width: 767px) {
   #home {
     background-image: url("../assets/home/background-home-mobile.jpg");
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  #destination {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
   }
 }
 
+.header {
+  height: 10%;
+  position: relative;
+}
+
 .logo {
-  margin: 10px;
+  margin: 30px 0 0 40px;
   float: left;
 }
 
-.dropdown {
+.nav-destinations {
   position: relative;
-  float: right;
-  backdrop-filter: blur(1px);
-  height: 10%;
-  font-size: 15px;
-  margin: 0 20px;
-  width: 65%;
-  height: 100px;
-}
-
-.dropbtn {
-  border: none;
-  background-color: transparent;
-  color: white;
-  font-size: 15px;
-  margin: 0 20px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  float: left;
+  top: 40px;
   z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.nav-buttons {
+  position: relative;
+  float: right;
+  backdrop-filter: blur(50px);
+  background-color: rgba(29, 44, 59, 0.254);
+  height: 10%;
+  font-size: 15px;
+  width: 58%;
+  height: 100px;
 }
 
-.home-content {
-  width: 40%;
-  margin: 350px 0 0 10%;
+.nav-btn {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  margin: 0 20px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.nav-btn-padding {
+  padding: 40px 0;
+}
+
+.content {
+  width: 33%;
+  position: relative;
+}
+
+.left {
   float: left;
 }
 
+.right {
+  float: right;
+  top: 40%;
+  right: 13%;
+}
+
+.home-margin {
+  margin: 250px 0 0 150px;
+}
+
 .explore {
-  margin: 550px 15% 20% 0;
-  padding: 5%;
+  margin: 450px 10% 20% 0;
+  padding: 6%;
   float: right;
   background-color: white;
   color: black;
-  border-radius: 150px;
+  border-radius: 50%;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+.nav-active {
+  border-bottom: 2px solid white;
 }
 
-/* Show the dropdown menu on hover */
-#nav-destinations:hover .dropdown-content {
-  display: block;
+#nav-home:hover .nav-btn,
+#nav-destinations:hover .nav-btn,
+#nav-crew:hover .nav-btn,
+#nav-tech:hover .nav-btn,
+#nav-europa:hover .nav-btn,
+#nav-mars:hover .nav-btn,
+#nav-moon:hover .nav-btn,
+#nav-titan:hover .nav-btn
+{
+  border-bottom: 1px solid white;
 }
 
-#nav-crew:hover .dropdown-content {
-  display: block;
-}
-#nav-tech:hover .dropdown-content {
-  display: block;
+.destination-content {
+  position: relative;
+  top: 10%;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-#nav-destinations:hover .dropbtn {
-  background-color: #3e8e41;
-}
-/* Change the background color of the dropdown button when the dropdown content is shown */
-#nav-crew:hover .dropbtn {
-  background-color: #3e8e41;
-}
-/* Change the background color of the dropdown button when the dropdown content is shown */
-#nav-tech:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-#home-button {
-  text-decoration: none;
+.destination-content img {
+  position: absolute;
+  padding: 10% 0 0 0;
+  top: 30%;
+  left: 20%;
 }

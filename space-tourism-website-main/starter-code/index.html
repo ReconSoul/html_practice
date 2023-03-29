@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Oswald:wght@200&display=swap"
+      rel="stylesheet" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -14,40 +20,23 @@
         <nav>
           <img class="logo" src="assets/shared/logo.svg" />
           <hr />
-          <div class="dropdown">
+          <div class="nav-buttons">
             <ul>
-              <li><a id="home-button" href="index.html">00 Home</a></li>
+              <li id="nav-home"><a class="nav-btn nav-btn-padding nav-active" href="index.html">00 Home</a></li>
               <li id="nav-destinations">
-                <button class="dropbtn">01 Destination</button>
-                <div class="dropdown-content">
-                  <a href="destinations/europa.html">Europa</a>
-                  <a href="destinations/mars.html">Mars</a>
-                  <a href="destinations/moon.html">Moon</a>
-                  <a href="destinations/titan.html">Titan</a>
-                </div>
+                <a class="nav-btn nav-btn-padding" href="destinations/europa.html">01 Destination</a>
               </li>
               <li id="nav-crew">
-                <button id="nav-crew-btn" class="dropbtn">02 Crew</button>
-                <div id="nav-crew-content" class="dropdown-content">
-                  <a href="crew/commander.html">Commander</a>
-                  <a href="crew/engineer.html">Engineer</a>
-                  <a href="crew/pilot.html">Pilot</a>
-                  <a href="crew/specialist.html">Specialist</a>
-                </div>
+                <a class="nav-btn nav-btn-padding" href="crew/commander.html">02 Crew</a>
               </li>
               <li id="nav-tech">
-                <button id="nav-tech-btn" class="dropbtn">03 Technology</button>
-                <div id="nav-tech-content" class="dropdown-content">
-                  <a href="technologies/capsule.html">Capsule</a>
-                  <a href="technologies/spaceport.html">Spaceport</a>
-                  <a href="technologies/vehicle.html">Vehicle</a>
-                </div>
+                <a class="nav-btn nav-btn-padding" href="technologies/capsule.html">03 Technology</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <div class="home-content">
+      <div class="content home-margin left">
         <h2>So, you want to travel to</h2>
         <h1>Space</h1>
         <p>

@@ -3,63 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Oswald:wght@200&display=swap"
+      rel="stylesheet" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <div class="header">
-      <nav>
-        <ul>
-          <li><a href="../index.html">00 Home</a></li>
-          <li class="dropdown">
-            <button class="dropbtn">01 Destination</button>
-            <div class="dropdown-content">
-              <a href="europa.html">Europa</a>
-              <a href="mars.html">Mars</a>
-              <a href="moon.html">Moon</a>
-              <a href="titan.html">Titan</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <button class="dropbtn">02 Crew</button>
-            <div class="dropdown-content">
-              <a href="../crew/commander.html">Commander</a>
-              <a href="../crew/engineer.html">Engineer</a>
-              <a href="../crew/pilot.html">Pilot</a>
-              <a href="../crew/specialist.html">Specialist</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <button class="dropbtn">03 Technology</button>
-            <div class="dropdown-content">
-              <a href="../technologies/capsule.html">Capsule</a>
-              <a href="../technologies/spaceport.html">Spaceport</a>
-              <a href="../technologies/vehicle.html">Vehicle</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <h2>01 Pick your destination</h2>
-
-    <div class="destination-content">
-      <a href="europa.html">Europa</a>
-      <a href="mars.html">Mars</a>
-      <a href="moon.html">Moon</a>
-      <a href="titan.html">Titan</a>
-    </div>
-
-    <section id="destination-content">
-      <img src="../assets/destination/image-europa.png" alt="Europa" />
-
-      <div class="description">
-        The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface,
-        it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+    <section id="destination">
+      <div class="header">
+        <nav>
+          <img class="logo" src="../assets/shared/logo.svg" />
+          <hr />
+          <div class="nav-buttons">
+            <ul>
+              <li id="nav-home"><a class="nav-btn nav-btn-padding" href="../index.html">00 Home</a></li>
+              <li id="nav-destinations">
+                <a class="nav-btn nav-btn-padding nav-active" href="destinations/europa.html">01 Destination</a>
+              </li>
+              <li id="nav-crew">
+                <a class="nav-btn nav-btn-padding" href="../crew/commander.html">02 Crew</a>
+              </li>
+              <li id="nav-tech">
+                <a class="nav-btn nav-btn-padding" href="../technologies/capsule.html">03 Technology</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <div class="distance">Avg. distance 628 mil. km</div>
-      <div class="travel-time">Est. travel time 3 years</div>
+
+      <div class="nav-destinations">
+        <h2>01 Pick your destination</h2>
+        <ul>
+          <li id="nav-europa"><a class="nav-btn nav-active" href="europa.html">Europa</a></li>
+          <li id="nav-mars"><a class="nav-btn" href="mars.html">Mars</a></li>
+          <li id="nav-moon"><a class="nav-btn" href="moon.html">Moon</a></li>
+          <li id="nav-titan"><a class="nav-btn" href="titan.html">Titan</a></li>
+        </ul>
+      </div>
+      <div class="destination-content">
+        <img src="../assets/destination/image-europa.png" alt="Europa" />
+
+        <div class="content right">
+          <h1>Europa</h1>
+          <p>
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy
+            surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery
+            cabin.
+          </p>
+          <h2>Avg. distance 628 mil. km</h2>
+          <h2>Est. travel time 3 years</h2>
+        </div>
+      </div>
     </section>
   </body>
 </html>
