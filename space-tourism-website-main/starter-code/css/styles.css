@@ -1,17 +1,12 @@
-body,
-html {
+body {
   margin: 0;
   height: 100%;
   color: rgba(229, 228, 253, 0.866);
-}
-
-section {
-  height: 100%;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 ul {
@@ -50,6 +45,7 @@ p {
 nav {
   position: relative;
   padding-top: 50px;
+  z-index: 2;
 }
 
 nav hr {
@@ -72,6 +68,10 @@ nav hr {
   #crew {
     background-image: url("../assets/crew/background-crew-desktop.jpg");
   }
+
+  #tech {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -84,6 +84,9 @@ nav hr {
   #crew {
     background-image: url("../assets/crew/background-crew-tablet.jpg");
   }
+  #tech {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -95,6 +98,9 @@ nav hr {
   }
   #crew {
     background-image: url("../assets/crew/background-crew-mobile.jpg");
+  }
+  #tech {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
   }
 }
 
@@ -195,7 +201,10 @@ nav hr {
 #nav-commander:hover .nav-btn,
 #nav-engineer:hover .nav-btn,
 #nav-pilot:hover .nav-btn,
-#nav-specialist:hover .nav-btn
+#nav-specialist:hover .nav-btn,
+#nav-capsule:hover .nav-btn,
+#nav-spaceport:hover .nav-btn,
+#nav-vehicle:hover .nav-btn
  {
   border-bottom: 1px solid white;
 }
@@ -214,7 +223,7 @@ nav hr {
 
 .crew-content {
   position: relative;
-  top: 30%;
+  margin-top: 20%;
 }
 
 .crew-content img {
@@ -225,4 +234,8 @@ nav hr {
 
 .crew-name {
   margin: 0 30%;
+}
+
+.tech-content {
+  position: relative;
 }
