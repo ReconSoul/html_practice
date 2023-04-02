@@ -37,7 +37,7 @@ h2 {
 }
 
 p {
-  font-size: 23px;
+  font-size: 18px;
   font-family: sans-serif;
   line-height: 40px;
 }
@@ -174,16 +174,16 @@ nav hr {
 }
 
 .home-margin {
-  margin: 250px 0 0 150px;
+  margin: 200px 0 0 150px;
 }
 
 .explore {
-  margin: 450px 10% 20% 0;
+  margin: 350px 10% 0 0;
   padding: 6%;
   float: right;
   background-color: white;
   color: black;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .nav-active {
